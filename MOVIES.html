@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Film Collection</title>
+
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #f7f8fc 0%, #e8ecf7 100%);
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    color: #2f3e46;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 14pt;
+    color: #7b8ab8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 11pt;
+    color: #2f3e46;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #7b8ab8;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover { color: #7b8ab8; }
+.nav-links a:hover::after { width: 100%; }
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px 30px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #6c7bb0;
+}
+
+/* CATEGORY NAV */
+.category-nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-nav a {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #6c7bb0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.category-nav a:hover {
+    background-color: #6c7bb0;
+    color: white;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    color: #6c7bb0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* CARD */
+.film-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(108,123,176,0.25);
+}
+
+.poster {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.category {
+    font-size: 13px;
+    color: #7b8ab8;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.details {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.synopsis {
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+iframe {
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">My IT Journey</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="BIOGRAPHY.html">Biography</a></li>
+        <li><a href="BLOG-1.html">Blog</a></li>
+        <li><a href="MUSIC.html">Music</a></li>
+        <li><a href="FILMS.html">Films</a></li>
+        <li><a href="GALLERY.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>🎬 My Film Collection</h1>
+</div>
+
+<div class="category-nav">
+    <a href="#movie">🎥 Movie</a>
+    <a href="#tvshow">📺 TV Show</a>
+</div>
+
+<!-- MOVIE SECTION -->
+<div class="section" id="movie">
+    <h2>My Film Movies</h2>
+    <div class="film-grid">
+
+        <div class="card">
+
+            <a href="IMAGES/musicCover/OTTO.jpg" target="winImage">
+                <img class="poster" src="IMAGES/musicCover/OTTO.jpg"
+                alt="A Man Called Otto official movie poster featuring Tom Hanks."
+                title="A Man Called Otto is a heartfelt comedy-drama starring Tom Hanks about grief, healing, and unexpected friendship.">
+            </a>
+
+            <div class="category">Comedy • Drama • Romance</div>
+            <div class="title">A Man Called Otto</div>
+            <div class="details"><strong>Director:</strong> Marc Forster</div>
+            <div class="details"><strong>Stars:</strong> Tom Hanks, Mariana Treviño, Rachel Keller</div>
+
+            <div class="synopsis">
+                A grumpy widower whose only joy comes from criticizing his neighbors meets his match when a lively young family moves in next door. 
+                After losing his beloved wife, Otto isolates himself from the world, following strict routines and pushing everyone away with his cold personality. 
+                However, the warmth and persistence of his new neighbors slowly break down the emotional walls he has built around his heart. 
+                Through small but meaningful acts of kindness, unexpected friendships, and moments of humor, Otto begins to reconnect with life again. 
+                The film beautifully explores grief, healing, second chances, and how love and community can give someone a reason to live again.
+            </div>
+
+            <iframe src="https://www.youtube.com/embed/eFYUX9l-m5I"
+                    title="A Man Called Otto Trailer"
+                    allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- TV SHOW SECTION -->
+<div class="section" id="tvshow">
+    <h2>My Film TV Shows</h2>
+    <div class="film-grid">
+
+        <div class="card">
+
+            <a href="IMAGES/musicCover/HOUSE.jpg" target="winImage">
+                <img class="poster" src="IMAGES/musicCover/HOUSE.jpg"
+                alt="House M.D. official poster featuring Dr. Gregory House."
+                title="House M.D. is a medical drama series about a genius but antisocial doctor solving complex cases.">
+            </a>
+
+            <div class="category">Medical Drama • Mystery</div>
+            <div class="title">House M.D.</div>
+            <div class="details"><strong>Creator:</strong> David Shore</div>
+            <div class="details"><strong>Stars:</strong> Hugh Laurie, Lisa Edelstein, Robert Sean Leonard</div>
+
+            <div class="synopsis">
+                Dr. Gregory House is a brilliant yet highly antisocial medical genius who leads a team of diagnosticians at Princeton-Plainsboro Teaching Hospital. 
+                Known for his sharp sarcasm and unconventional methods, House solves rare and life-threatening medical cases that other doctors cannot figure out. 
+                Despite his extraordinary intelligence, he constantly struggles with chronic pain, addiction, and emotional isolation. 
+                His complicated relationships with his team and closest colleagues reveal the vulnerable side beneath his cold exterior. 
+                The series combines medical mysteries, psychological depth, and dark humor, making it both intellectually engaging and emotionally powerful.
+            </div>
+
+            <iframe src="https://www.youtube.com/embed/MczMB8nU1sY"
+                    title="House MD Clip"
+                    allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
